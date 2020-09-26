@@ -12,11 +12,14 @@ function Contact() {
 
     return (
         <div>
+
+        <div className="contacts">
          <h2>Nous contacter</h2>
          <br/>
         <p>Tél : 06 15 37 71 51 (Professeur, responsable de la section)</p>
         <br/>
         <p>Tél : 01 48 26 39 11 (Secrétariat)</p>
+        </div>
 
 
         <div className="formulaire">
@@ -38,6 +41,13 @@ function Contact() {
             <textarea placeholder="Message"/>
             <button type="submit">Envoyer</button>
             </form>
+        </div>
+        <div className="transports">
+        <h2>Transports</h2>
+        <p>Métro : Ligne 13 – station « Saint-Denis Université »</p>
+        <p>Bus : Lignes 256 – 356 – station « Général Leclerc »</p>
+        <p>Tram : Lignes T5 – station « Roger Sémat »</p>
+        <p>Adresse : 4 av de Stalingrad Saint-Denis 93200</p>
         </div>
 
         </div>

@@ -17,6 +17,24 @@ body{
   "footer";
 }
 
+.contacts :first-child{
+  font-size: xx-large;
+  margin: 10px 10px;
+}
+
+.contacts p{
+  margin-left: 10px;
+}
+
+.transports :first-child{
+  font-size: xx-large;
+  margin: 10px 10px;
+}
+
+.transports p{
+  margin-left: 10px;
+}
+
 nav{
   grid-area: nav;
   display: flex;
@@ -88,7 +106,6 @@ section{
 section h1 {
   width: 730px;
   font-size: 30px;
-  margin: auto;
  
 }
 .article-home{
@@ -127,6 +144,16 @@ form input{
 textarea{
   margin-bottom: 20px;
 }
+.inscription :first-child{
+  font-size: xx-large;
+  margin: 10px 10px;
+}
+
+.inscription  p{
+  margin-left: 10px;
+}
+
+
 @media screen and (max-width: 950px) {
 
   menu{
@@ -176,4 +203,5 @@ textarea{
     right: 40px;
     
 }
+
 }
