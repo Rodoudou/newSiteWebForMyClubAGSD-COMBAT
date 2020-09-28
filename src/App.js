@@ -6,6 +6,8 @@ import Home from './containers/home';
 import Contact from './containers/contact';
 import Footer from './components/footer'
 import Inscription from "./containers/inscription";
+import Horaires from "./containers/horaires";
+
 
 import "./App.css";
 
@@ -23,6 +25,9 @@ function App() {
         </Route>
         <Route path="/inscription">
           <Inscription/>
+        </Route>
+        <Route>
+          <Horaires/>
         </Route>
       </Switch>
       <Footer/>

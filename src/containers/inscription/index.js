@@ -11,16 +11,14 @@ function Inscription() {
         Pour vous inscrire rien de plus simple, il vous suffit de télécharger et de remplir la feuille d’inscription et y joindre :
         </p>
         <p>
-        1- Pour commencer nous vous demanderons de remplir ou de télécharger le formulaire d’inscription et la feuille d’assurance au format PDF ou l’imprimer et l’apporter. (Le formulaire est également disponible à la salle, vous pouvez donc le remplir sur place).
+        1- Pour commencer nous vous demanderons de remplir ou de télécharger le <a href="http://www.agsd.fr/images/content/inscription/preinscription.pdf">la feuille d’inscription</a> et la <a href="http://www.agsd.fr/images/content/inscription/assurance.pdf">la feuille d’inscription</a> au format PDF ou l’imprimer et l’apporter. (Le formulaire est également disponible à la salle, vous pouvez donc le remplir sur place).
         </p>
         <p>
-        2- Pour finaliser l’inscription vous pouvez télécharger et vous munir du certificat médical de non contre-indication « à la pratique du sport en compétition ».
+        2- Pour finaliser l’inscription vous pouvez télécharger et vous munir du <a href="/src/assets/img/certif.jpg">certificat médical</a> de non contre-indication « à la pratique du sport en compétition ».
         </p>
-
         <p>3- Un chèque à l’ordre de "Avant Garde Saint-Denis".</p>
-        <br/>
         <p>
-        Vous pouvez envoyer votre dossier complet à l’adresse ci-dessous ou le remettre directement au bureau ( Avant Garde Saint-Denis , 4 av de Stalingrad, Saint-Denis 93200 ).
+        Vous pouvez envoyer votreline-height  dossier complet à l’adresse ci-dessous ou le remettre directement au bureau ( Avant Garde Saint-Denis , 4 av de Stalingrad, Saint-Denis 93200 ).
         </p>
         <br/>
         
@@ -28,7 +26,7 @@ function Inscription() {
         <p style={{fontWeight:"bold", color:"tomato"}}>
         Seuls les dossiers complets seront enregistrés.
         </p>
-
+        <br/>
         <p>
             Vous pourrez alors régler votre abonnement par carte bancaire, chèque ou espèces.
         </p>
