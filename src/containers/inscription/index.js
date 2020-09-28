@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 import '../../App.css';
 
 function Inscription() {
@@ -11,10 +12,10 @@ function Inscription() {
         Pour vous inscrire rien de plus simple, il vous suffit de télécharger et de remplir la feuille d’inscription et y joindre :
         </p>
         <p>
-        1- Pour commencer nous vous demanderons de remplir ou de télécharger le <a href="http://www.agsd.fr/images/content/inscription/preinscription.pdf">la feuille d’inscription</a> et la <a href="http://www.agsd.fr/images/content/inscription/assurance.pdf">la feuille d’inscription</a> au format PDF ou l’imprimer et l’apporter. (Le formulaire est également disponible à la salle, vous pouvez donc le remplir sur place).
+        1- Pour commencer nous vous demanderons de remplir ou de télécharger le <a href="http://www.agsd.fr/images/content/inscription/preinscription.pdf">formulaire d’inscription</a> et la <a href="http://www.agsd.fr/images/content/inscription/assurance.pdf">la feuille d'assurance</a> au format PDF ou l’imprimer et l’apporter. (Le formulaire est également disponible à la salle, vous pouvez donc le remplir sur place).
         </p>
         <p>
-        2- Pour finaliser l’inscription vous pouvez télécharger et vous munir du <a href="/src/assets/img/certif.jpg">certificat médical</a> de non contre-indication « à la pratique du sport en compétition ».
+        2- Pour finaliser l’inscription vous pouvez télécharger et vous munir du <Link to="/certificat-medical">certificat médical</Link> de non contre-indication « à la pratique du sport en compétition ».
         </p>
         <p>3- Un chèque à l’ordre de "Avant Garde Saint-Denis".</p>
         <p>

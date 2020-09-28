@@ -10,6 +10,7 @@ function Menu() {
             <ul className="menu">
                 <li><Link className="on" to="/">Accueil</Link></li>
                 <li><Link to="horaires">Horaires</Link></li>
+                <li><Link to="/tarifs">Tarifs</Link></li>
                 <li><Link to="inscription">Inscription</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
                 <label className="cacher-menu" htmlFor="check">

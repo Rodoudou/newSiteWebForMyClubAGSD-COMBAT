@@ -5,15 +5,18 @@ function Contact() {
 
     const [name, setName]= useState("");
     const [email, setEmail]= useState("");
+    const [message, setMessage]= useState("");
     const [errorMessage, seterrormessage]= useState("");
 
     console.log('name =>', name);
     console.log('email =>', email);
+    console.log('message =>', message);
 
     return (
         <div>
 
         <div className="contacts">
+
          <h2>Nous contacter</h2>
          <br/>
         <p>Tél : 06 15 37 71 51 (Professeur, responsable de la section)</p>
@@ -23,25 +26,36 @@ function Contact() {
 
 
         <div className="formulaire">
+        
             <form onSubmit={ (e)=>{
                 e.preventDefault();
                 console.log(name, email)
            
             }} action="Post" type="submit">
+
             <input onChange={(e)=>{
                 const name = e.target.value;
                 setName(name);
                 console.log(e.target.value)
-            }} type="text" placeholder="Name" value={name}/>
+            }} required type="text" placeholder="Nom" value={name}/>
+
             <input onChange={(e)=>{
                 const email = e.target.value;
                 setEmail(email);
                 console.log(e.target.value)
-            }} type="email" placeholder="Email" value={email}/>
-            <textarea placeholder="Message"/>
+            }} required type="email" placeholder="Email" value={email}/>
+
+            <textarea onChange={(e)=>{
+                const message = e.target.value;
+                setMessage(message);
+                console.log(e.target.value)
+            }} placeholder="Message" rows="6" cols="33"/>
+
             <button type="submit">Envoyer</button>
+
             </form>
         </div>
+
         <div className="transports">
         <h2>Transports</h2>
         <p>Métro : Ligne 13 – station « Saint-Denis Université »</p>

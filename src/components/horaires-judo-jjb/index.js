@@ -3,10 +3,11 @@ import React from 'react'
 function HorairesJudoJjb() {
     return (
         <div>
-                  <table className="judo-jjb">
+        
+      <table className="judo-jjb">
         <tr>
           <th>Judo & JJB</th>
-          <th className="eveil">3-4 ans</th>
+          <th className="eveil"> Eveil 3-4 ans</th>
           <th className="baby-presPoussin">5-7 ans</th>
           <th className="poussin-benjamin">8-11 ans</th>
           <th className="ados-adultes">Ados-Adultes</th>
