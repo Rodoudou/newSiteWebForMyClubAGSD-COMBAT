@@ -64,15 +64,17 @@ body{
 }
 
 nav{
+  background-image: url('./assets/img/1.jpg');
+  background-size: cover;
+  height: 450px;
   grid-area: nav;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #666;
-  color: #dbdbdb;
-  height: 130px;
+  color: white;
 }
+
 
 nav h2{
   text-align: center;
@@ -80,6 +82,21 @@ nav h2{
 
 nav p{
   font-size: 17px;
+}
+
+.nav{
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 menu{
