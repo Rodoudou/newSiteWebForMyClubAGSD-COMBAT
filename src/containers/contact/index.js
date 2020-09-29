@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Map from '../../components/map';
 import '../../App.css';
 
 function Contact() {
@@ -13,7 +14,7 @@ function Contact() {
     console.log('message =>', message);
 
     return (
-        <div>
+        <div className="contact">
 
         <div className="contacts">
 
@@ -62,6 +63,11 @@ function Contact() {
         <p>Bus : Lignes 256 – 356 – station « Général Leclerc »</p>
         <p>Tram : Lignes T5 – station « Roger Sémat »</p>
         <p>Adresse : 4 av de Stalingrad Saint-Denis 93200</p>
+        </div>
+        
+        <div className="acces-map">
+            <h2>ACCÈS</h2>
+        <Map />
         </div>
 
         </div>

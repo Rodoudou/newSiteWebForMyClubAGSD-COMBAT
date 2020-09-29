@@ -1,5 +1,6 @@
 import React from "react";
 import Article from "../../components/article";
+import Map from '../../components/map';
 import "../../App.css"
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
 
       <section>
         <Article />
+       <Map/>
       </section>
 
     </div>
