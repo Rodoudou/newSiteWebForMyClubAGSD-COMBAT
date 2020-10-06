@@ -1,5 +1,9 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Routes  } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+} from "react-router-dom";
 import Nav from "./components/nav";
 import Menu from "./components/menu";
 import Home from "./containers/home";
@@ -18,24 +22,15 @@ function App() {
       <Nav />
       <Menu />
       <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
-        <Route path="/inscription">
-          <Inscription />
-        </Route>
-        <Route path="/horaires">
-          <Horaires />
-        </Route>
-        <Route path="/tarifs">
-          <Tarifs />
-        </Route>
-        <Route path="/certificat-medical">
-          <CertificatMedical />
-        </Route>
+        <Route exact path="/" element={<Home />}></Route>
+        <Route path="contact" element={<Contact />}></Route>
+        <Route path="inscription" element={<Inscription />}></Route>
+        <Route path="horaires" element={<Horaires />}></Route>
+        <Route path="tarifs" element={<Tarifs />}></Route>
+        <Route
+          path="certificat-medical"
+          element={<CertificatMedical />}
+        ></Route>
       </Routes>
       <Footer />
     </Router>
