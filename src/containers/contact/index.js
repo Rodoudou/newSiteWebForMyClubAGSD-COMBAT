@@ -1,13 +1,34 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Map from '../../components/map';
 import '../../App.css';
 
-function Contact() {
+const Contact=({name,setName,email,setEmail,message, setMessage})=> {
 
-    const [name, setName]= useState("");
-    const [email, setEmail]= useState("");
-    const [message, setMessage]= useState("");
-    const [errorMessage, seterrormessage]= useState("");
+    
+
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        console.log(name, email)
+    };
+
+    const HandleChangeName = (e)=>{
+        const name = e.target.value;
+        setName(name);
+        console.log(e.target.value)
+    };
+
+    const HandleChangeEmail = (e)=>{
+        const email = e.target.value;
+        setEmail(email);
+        console.log(e.target.value)
+    };
+
+    const HandleChangeMessage = (e)=>{
+        const message = e.target.value;
+        setMessage(message);
+        console.log(e.target.value)
+    };
+
 
     console.log('name =>', name);
     console.log('email =>', email);
@@ -28,29 +49,13 @@ function Contact() {
 
         <div className="formulaire">
         
-            <form onSubmit={ (e)=>{
-                e.preventDefault();
-                console.log(name, email)
-           
-            }} action="Post" type="submit">
+            <form onSubmit={handleSubmit} action="Post" type="submit">
 
-            <input onChange={(e)=>{
-                const name = e.target.value;
-                setName(name);
-                console.log(e.target.value)
-            }} required type="text" placeholder="Nom" value={name}/>
+            <input onChange={HandleChangeName} required type="text" placeholder="Nom..." value={name}/>
 
-            <input onChange={(e)=>{
-                const email = e.target.value;
-                setEmail(email);
-                console.log(e.target.value)
-            }} required type="email" placeholder="Email" value={email}/>
+            <input onChange={HandleChangeEmail} required type="email" placeholder="Email..." value={email}/>
 
-            <textarea onChange={(e)=>{
-                const message = e.target.value;
-                setMessage(message);
-                console.log(e.target.value)
-            }} placeholder="Message" rows="6" cols="33"/>
+            <textarea onChange={HandleChangeMessage} placeholder="Message..." rows="6" cols="33"/>
 
             <button type="submit">Envoyer</button>
 

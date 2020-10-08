@@ -4,7 +4,7 @@ import Certif from '../../assets/img/certif.jpg';
 function CertificatMedical() {
     return (
         <div className="certif">
-        <img src={Certif}/>
+        <img src={Certif} alt="certificat medicale"/>
             
         </div>
     )
