@@ -5,7 +5,7 @@ import logo from "../../assets/img/logo.jpg";
 function Nav() {
   return (
     <nav>
-        <img src={logo} alt="logo"/>
+       <img src={logo} alt="logo"/>
 
 
         <div className="nav-content">
