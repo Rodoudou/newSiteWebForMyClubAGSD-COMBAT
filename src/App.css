@@ -12,8 +12,8 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: 0px 90px 1fr 100px;
   grid-template-areas: 
-  "nav"
   "menu"
+  "nav"
   "section"
   "footer";
 }
@@ -88,14 +88,17 @@ height: 250px;
 }
 
 nav{
+  background-image: url('./assets/img/banner.jpg');
+
   object-fit: cover;
   width: 100%;
-  height: 250px;
+  height: 600px;
   grid-area: nav;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  color: white;
 }
 nav h2{
   text-align: center;
@@ -115,7 +118,7 @@ menu{
   justify-content: center;
   align-items: center;
   background-color: #1F1F1F;
-  height: 70px;
+  height: 55px;
 }
 
 .menu {
@@ -185,12 +188,20 @@ footer{
 }
 
 footer p{
+  color:white;
+  font-size: 13px;
   margin-right: 10px;
 }
 
 /* Social Media */
-.socialIcon {
+.socialIcon>*:hover{
   color: white;
+  transition: 0.5s;
+}
+
+.socialIcon {
+  color:rgb(159, 154, 154);
+  cursor: pointer;
 }
 
 .socialIcon :nth-of-type(2) {

@@ -2,6 +2,7 @@ import React from "react";
 import { Routes, Route, Outlet } from "react-router";
 import Footer from "../footer";
 import Menu from "../menu";
+import Nav from "../nav";
 
 const Layout = ({
   handleClickFaceBook,
@@ -23,6 +24,7 @@ const Layout = ({
             />
           }
         />
+          <Menu/>
         <Route
           path="/*"
           element={
@@ -34,6 +36,7 @@ const Layout = ({
           }
         />
       </Routes>
+          <Nav/>
       <div>
         <Outlet />
         <Footer />

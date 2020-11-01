@@ -1,11 +1,12 @@
 import React from "react";
 import logo from "../../assets/img/logo.jpg";
+import banner from "../../assets/img/banner.jpg";
 
 
 function Nav() {
   return (
     <nav>
-       <img src={logo} alt="logo"/>
+       {/* <img src={logo} alt="logo"/> */}
 
 
         <div className="nav-content">
@@ -15,7 +16,7 @@ function Nav() {
                 la ville de Saint-Denis 93200
               </p>
         </div>
-        <div style={{width:'25%'}}></div>
+        {/* <div style={{width:'25%'}}></div> */}
 
     </nav>
   );

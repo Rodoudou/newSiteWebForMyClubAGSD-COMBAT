@@ -113,7 +113,6 @@ const App = () => {
 
   return (
     <Router>
-      <Nav />
       {/* <AuthButton/> */}
       <Routes>
         {/* <Route path="public" element={<Public/>}/> */}
