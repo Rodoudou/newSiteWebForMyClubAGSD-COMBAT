@@ -7,6 +7,7 @@ const Layout = ({
   handleClickFaceBook,
   handleClickInstagram,
   handleClickYoutube,
+  handleClickTwitter
 }) => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Layout = ({
               handleClickFaceBook={handleClickFaceBook}
               handleClickInstagram={handleClickInstagram}
               handleClickYoutube={handleClickYoutube}
+              handleClickTwitter={handleClickTwitter}
             />
           }
         />

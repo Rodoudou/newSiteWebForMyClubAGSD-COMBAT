@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "./App.css";
 import {
   BrowserRouter as Router,
-  Navigate,
+  // Navigate,
   Route,
   Routes,
-  useLocation,
-  useNavigate,
+  // useLocation,
+  // useNavigate,
 } from "react-router-dom";
 import NotFound from "./containers/notFound";
 import Nav from "./components/nav";
@@ -102,6 +102,10 @@ const App = () => {
     window.location = "https://www.instagram.com/agsdcombat";
   };
 
+  const handleClickTwitter = () => {
+    window.location = "https://twitter.com/CombatAgsd";
+  };
+
   const handleClickYoutube = () => {
     window.location =
       "https://www.youtube.com/channel/UCDUTivMSGwXPmzMIGMwgWUA";
@@ -122,6 +126,7 @@ const App = () => {
               handleClickFaceBook={handleClickFaceBook}
               handleClickInstagram={handleClickInstagram}
               handleClickYoutube={handleClickYoutube}
+              handleClickTwitter={handleClickTwitter}
             />
           }
         >

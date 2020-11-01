@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faYoutube } from "@fortawesome/free-brands-svg-icons";
-function Menu({handleClickFaceBook, handleClickInstagram, handleClickYoutube}) {
+import { faFacebook, faInstagram, faYoutube, faTwitter} from "@fortawesome/free-brands-svg-icons";
+function Menu({handleClickFaceBook, handleClickInstagram,handleClickTwitter, handleClickYoutube}) {
   return (
     <menu>
       <input type="checkbox" id="check" />
@@ -10,7 +10,7 @@ function Menu({handleClickFaceBook, handleClickInstagram, handleClickYoutube}) {
         <i className="fas fa-bars"></i>
       </label>
       <ul className="menu">
-        <div style={{ display: "flex" }}>
+        <div className="menu-content" style={{ display: "flex"}}>
           <div>
             <li>
               <NavLink activeClassName="active" to="/">
@@ -38,9 +38,10 @@ function Menu({handleClickFaceBook, handleClickInstagram, handleClickYoutube}) {
               </NavLink>
             </li>
           </div>
-          <div className="socialIcon" >
+          <div className="socialIcon" style={{ marginLeft: 90}}>
       <FontAwesomeIcon onClick={handleClickFaceBook} icon={faFacebook} />
       <FontAwesomeIcon onClick={handleClickInstagram} icon={faInstagram} />
+      <FontAwesomeIcon onClick={handleClickTwitter} icon={faTwitter} />
       <FontAwesomeIcon onClick={handleClickYoutube} icon={faYoutube} />
     </div>
         </div>

@@ -327,6 +327,11 @@ td, th{
     transition: 0.5s;
     padding-top: 80px;
 }
+.menu-content{
+  display: flex;
+  justify-content: space-around;
+ 
+}
 
 .menu li{
     display: block;
