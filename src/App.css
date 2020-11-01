@@ -119,6 +119,8 @@ menu{
   align-items: center;
   background-color: #1F1F1F;
   height: 55px;
+  position: fixed;
+  width: 100%;
 }
 
 .menu {
