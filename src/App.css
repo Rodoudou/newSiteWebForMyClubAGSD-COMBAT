@@ -3,7 +3,7 @@ body{
   margin: 0px;
   padding: 0px;
   font-family: Arial;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 40px ;
 }
 
@@ -89,7 +89,6 @@ height: 250px;
 
 nav{
   background-image: url('./assets/img/banner.jpg');
-
   object-fit: cover;
   width: 100%;
   height: 600px;
@@ -106,11 +105,11 @@ nav h2{
 nav p{
   font-size: 17px;
 }
-img[alt="logo"]{
+/* img[alt="logo"]{
   height: 100px;
   width: 25%;
   margin-left: 10px;
-}
+} */
 
 menu{
   grid-area: "menu";
@@ -185,8 +184,13 @@ footer{
   grid-area: footer;
   display: flex;
   justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 130px;
+  padding-left: 40%;
+}
+
+.footer{
+  display: flex;
 }
 
 footer p{
@@ -194,7 +198,15 @@ footer p{
   font-size: 13px;
   margin-right: 10px;
 }
+.pageFacebook{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
 
+.pageEnfants{
+  margin-top: 10px;
+}
 /* Social Media */
 .socialIcon>*:hover{
   color: white;
@@ -312,12 +324,34 @@ td, th{
 
 @media screen and (max-width: 950px) {
 
-  menu{
-    display: flex;
-    justify-content: flex-end;
-    background-color: cadetblue;
+  nav{
+    display: none;
   }
 
+  menu{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #1F1F1F;
+    top: 0;
+  }
+
+  /* changer color menu Burger */
+label[class="voir-menu"]{
+  color: white;
+}
+
+/* cacher la X pour faire disparaitre le menu */
+label[class="cacher-menu"]{
+  display: none;
+}
+/* supprimer social icon du menu */
+.socialIcon{
+  display: none;
+}
+
+.voir-menu{
+  margin-left: 10px;
+}
   .voir-menu, .cacher-menu{
     display: block;
     font-size: 30px;
@@ -333,8 +367,8 @@ td, th{
 .menu{
     background-color: #dbdbdb;
     position: fixed;
-    top: 0;
-    right: -100%;
+    top:55px;
+    left: -100%;
     height: 100vh;
     width: 100%;
     transition: 0.5s;
@@ -354,15 +388,24 @@ td, th{
     border-bottom: 1px solid #ccc;
 }
 
+/* color text dans menu burger */
+.menu li a {
+  color: black;
+}
+
 #check:checked ~ .menu{
-    right: 0;
+    left: 0;
 }
 
 .cacher-menu{
     position: absolute;
     top: 40px;
-    right: 40px;
+    left: 40px;
     
+}
+
+footer p{
+  display: none;
 }
 
 }

@@ -9,7 +9,6 @@ import {
   // useNavigate,
 } from "react-router-dom";
 import NotFound from "./containers/notFound";
-import Nav from "./components/nav";
 import Home from "./containers/home";
 import Contact from "./containers/contact";
 import Inscription from "./containers/inscription";

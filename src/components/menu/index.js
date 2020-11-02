@@ -7,7 +7,7 @@ function Menu({handleClickFaceBook, handleClickInstagram,handleClickTwitter, han
     <menu>
       <input type="checkbox" id="check" />
       <label className="voir-menu" htmlFor="check">
-        <i className="fas fa-bars"></i>
+        <i className="fas fa-bars" ></i>
       </label>
       <ul className="menu">
         <div className="menu-content" style={{ display: "flex"}}>
