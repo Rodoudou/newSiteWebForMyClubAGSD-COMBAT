@@ -20,7 +20,7 @@ function Home() {
       ) : (
         <section>
           <Article />
-          <Map />
+          {/* <Map /> */}
         </section>
       )}
     </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -8,8 +9,13 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
+
   const handleClickFaceBook = () => {
     window.location = "https://www.facebook.com/agsdcombat";
+  };
+
+  const handleClickFaceBookids = () => {
+    window.location = "https://www.facebook.com/agsdcombatenfants/";
   };
 
   const handleClickInstagram = () => {
@@ -38,6 +44,7 @@ function Footer() {
 
       <div className="pageFacebook">
         <div className="pageAdultes">
+          <h1 onClick={handleClickFaceBook}>AGSD COMBAT</h1>
           <div
             class="fb-page"
             data-href="https://www.facebook.com/agsdcombat/"
@@ -62,6 +69,7 @@ function Footer() {
         </div>
 
         <div className="pageEnfants">
+        <h1 onClick={handleClickFaceBookids}>AGSD COMBAT Enfants</h1>
           <div
             class="fb-page"
             data-href="https://www.facebook.com/agsdcombatenfants"
