@@ -4,35 +4,21 @@ import Footer from "../footer";
 import Menu from "../menu";
 import Nav from "../nav";
 
-const Layout = ({
-  handleClickFaceBook,
-  handleClickInstagram,
-  handleClickYoutube,
-  handleClickTwitter
-}) => {
+const Layout = () => {
   return (
     <div>
       <Routes>
         <Route
           path="/*"
           element={
-            <Menu
-              handleClickFaceBook={handleClickFaceBook}
-              handleClickInstagram={handleClickInstagram}
-              handleClickYoutube={handleClickYoutube}
-              handleClickTwitter={handleClickTwitter}
-            />
+            <Menu/>
           }
         />
           <Menu/>
         <Route
           path="/*"
           element={
-            <Footer
-              handleClickFaceBook={handleClickFaceBook}
-              handleClickInstagram={handleClickInstagram}
-              handleClickYoutube={handleClickYoutube}
-            />
+            <Footer/>
           }
         />
       </Routes>

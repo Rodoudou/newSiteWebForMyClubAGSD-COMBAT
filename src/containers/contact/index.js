@@ -1,6 +1,7 @@
 import React from 'react';
 import Map from '../../components/map';
 import '../../App.css';
+import FacebookPage from '../../components/FacebookPage';
 
 const Contact=({name,setName,email,setEmail,message, setMessage})=> {
 
@@ -36,7 +37,8 @@ const Contact=({name,setName,email,setEmail,message, setMessage})=> {
 
     return (
         <div className="contact">
-
+        <FacebookPage/>
+        <div classNames="contact-content">
         <div className="contacts">
 
          <h2>Nous contacter</h2>
@@ -73,6 +75,7 @@ const Contact=({name,setName,email,setEmail,message, setMessage})=> {
         <div className="acces-map">
             <h2>ACCÈS</h2>
         <Map />
+        </div>
         </div>
 
         </div>

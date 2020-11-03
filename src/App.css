@@ -201,7 +201,7 @@ footer p{
 .pageFacebook{
   display: flex;
   flex-direction: column;
-
+  margin-top: 110px;
   margin-left: 10%;
 }
 
@@ -209,27 +209,53 @@ footer p{
   margin-top: 10px;
 }
 
-.pageEnfants h1{
+.pageEnfants h3{
   text-decoration: none;
   color: #E33028;
   cursor: pointer;
 }
 
-.pageAdultes h1{
+.pageAdultes h3{
   text-decoration: none;
   color: #E33028;
   cursor: pointer;
 }
 
-.pageEnfants h1:hover{
-  color: white;
+.pageEnfants h3:hover{
+  color: #e45f5a;
   transition: 0.5s;
 }
 
-.pageAdultes h1:hover{
-  color: white;
+.pageAdultes h3:hover{
+  color: #e45f5a;
   transition: 0.5s;
 }
+
+
+.certif{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.inscription-content{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.horaires{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.tarifs-content{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 /* Social Media */
 .socialIcon>*:hover{
   color: white;

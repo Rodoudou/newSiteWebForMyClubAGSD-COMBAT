@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Article from "../../components/article";
-import Map from "../../components/map";
+// import Map from "../../components/map";
 import "../../App.css";
 
 

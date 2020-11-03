@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -93,22 +94,22 @@ const App = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleClickFaceBook = () => {
-    window.location = "https://www.facebook.com/agsdcombat";
-  };
+  // const handleClickFaceBook = () => {
+  //   window.location = "https://www.facebook.com/agsdcombat";
+  // };
 
-  const handleClickInstagram = () => {
-    window.location = "https://www.instagram.com/agsdcombat";
-  };
+  // const handleClickInstagram = () => {
+  //   window.location = "https://www.instagram.com/agsdcombat";
+  // };
 
-  const handleClickTwitter = () => {
-    window.location = "https://twitter.com/CombatAgsd";
-  };
+  // const handleClickTwitter = () => {
+  //   window.location = "https://twitter.com/CombatAgsd";
+  // };
 
-  const handleClickYoutube = () => {
-    window.location =
-      "https://www.youtube.com/channel/UCDUTivMSGwXPmzMIGMwgWUA";
-  };
+  // const handleClickYoutube = () => {
+  //   window.location =
+  //     "https://www.youtube.com/channel/UCDUTivMSGwXPmzMIGMwgWUA";
+  // };
 
   return (
     <Router>
@@ -121,10 +122,10 @@ const App = () => {
           path="/"
           element={
             <Layout
-              handleClickFaceBook={handleClickFaceBook}
-              handleClickInstagram={handleClickInstagram}
-              handleClickYoutube={handleClickYoutube}
-              handleClickTwitter={handleClickTwitter}
+              // handleClickFaceBook={handleClickFaceBook}
+              // handleClickInstagram={handleClickInstagram}
+              // handleClickYoutube={handleClickYoutube}
+              // handleClickTwitter={handleClickTwitter}
             />
           }
         >

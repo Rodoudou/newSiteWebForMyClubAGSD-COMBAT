@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../App.css";
+import FacebookPage from "../../components/FacebookPage";
 
 function Inscription() {
   const [isLoading, setIsLoading] = useState(true);
@@ -18,6 +19,8 @@ function Inscription() {
           {isLoading ? (
             <p>En chargement...</p>
           ) : (
+            <div className="inscription-content">
+              <FacebookPage/>
             <div>
               <h2>Comment s’abonner ?</h2>
               <p>
@@ -78,6 +81,8 @@ function Inscription() {
               </p>
 
               <p>Merci de votre compréhension.</p>
+            </div>
+
             </div>
           )}
         </div>

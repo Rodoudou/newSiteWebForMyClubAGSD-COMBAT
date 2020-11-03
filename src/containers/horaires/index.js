@@ -4,6 +4,7 @@ import "../../App.css";
 import HorairesMma from "../../components/horaires-mma";
 import Boxe from "../../components/horaires-boxe";
 import HorairesGrappling from "../../components/horaires-grappling";
+import FacebookPage from "../../components/FacebookPage";
 
 function Horiares() {
   const [isLoading, setIsLoading]=useState(true);
@@ -20,6 +21,8 @@ function Horiares() {
 
     {
       isLoading ? <p>En chargement...</p>:
+      <div className="horaires">
+        <FacebookPage/>
       <div>
       {/* Judo & JJB */}
       <HorairesJudoJjb />
@@ -29,6 +32,8 @@ function Horiares() {
       <HorairesMma />
       {/* Boxe */}
       <Boxe />
+      </div>
+
       </div>
     }
     </div>

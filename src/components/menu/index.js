@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebook, faInstagram, faYoutube, faTwitter} from "@fortawesome/free-brands-svg-icons";
-function Menu({handleClickFaceBook, handleClickInstagram,handleClickTwitter, handleClickYoutube}) {
+import SocialMedia from "../SocialMedias";
+
+function Menu() {
   return (
     <menu>
       <input type="checkbox" id="check" />
@@ -38,12 +38,8 @@ function Menu({handleClickFaceBook, handleClickInstagram,handleClickTwitter, han
               </NavLink>
             </li>
           </div>
-          <div className="socialIcon" style={{ marginLeft: 90}}>
-      <FontAwesomeIcon onClick={handleClickFaceBook} icon={faFacebook} />
-      <FontAwesomeIcon onClick={handleClickInstagram} icon={faInstagram} />
-      <FontAwesomeIcon onClick={handleClickTwitter} icon={faTwitter} />
-      <FontAwesomeIcon onClick={handleClickYoutube} icon={faYoutube} />
-    </div>
+          <SocialMedia/>
+
         </div>
         <label className="cacher-menu" htmlFor="check">
           <i className="fas fa-times"></i>
