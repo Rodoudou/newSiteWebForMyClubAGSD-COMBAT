@@ -38,7 +38,7 @@ const Contact=({name,setName,email,setEmail,message, setMessage})=> {
     return (
         <div className="contact">
         <FacebookPage/>
-        <div classNames="contact-content">
+        <div className="contact-content">
         <div className="contacts">
 
          <h2>Nous contacter</h2>

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import HorairesJudoJjb from "../../components/horaires-judo-jjb";
 import "../../App.css";
 import HorairesMma from "../../components/horaires-mma";
@@ -7,20 +7,9 @@ import HorairesGrappling from "../../components/horaires-grappling";
 import FacebookPage from "../../components/FacebookPage";
 
 function Horiares() {
-  const [isLoading, setIsLoading]=useState(true);
 
-  useEffect(()=>{
-    const fetchData = async()=>{
-      setIsLoading(false);
-
-    }
-    fetchData();
-  },[]);
   return (
     <div>
-
-    {
-      isLoading ? <p>En chargement...</p>:
       <div className="horaires">
         <FacebookPage/>
       <div>
@@ -33,9 +22,7 @@ function Horiares() {
       {/* Boxe */}
       <Boxe />
       </div>
-
       </div>
-    }
     </div>
   );
 }

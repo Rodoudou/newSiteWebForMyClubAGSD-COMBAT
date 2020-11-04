@@ -2,7 +2,7 @@ import React from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram, faYoutube, faTwitter} from "@fortawesome/free-brands-svg-icons";
 
-function SocialMedia() {
+function SocialMedias() {
 
   const handleClickFaceBook = () => {
     window.location = "https://www.facebook.com/agsdcombat";
@@ -30,4 +30,4 @@ function SocialMedia() {
     )
 }
 
-export default SocialMedia
+export default SocialMedias

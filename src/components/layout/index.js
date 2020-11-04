@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route, Outlet } from "react-router";
 import Footer from "../footer";
 import Menu from "../menu";
-import Nav from "../nav";
+import Nave from "../nave";
 
 const Layout = () => {
   return (
@@ -22,7 +22,7 @@ const Layout = () => {
           }
         />
       </Routes>
-          <Nav/>
+          <Nave/>
       <div>
         <Outlet />
         <Footer />

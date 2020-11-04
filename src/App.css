@@ -18,12 +18,13 @@ body{
   "footer";
 }
 
-.inscription a{
-  color: #0099FF;
+
+.inscription p{
   text-decoration: none;
-  font-size: 20px;
- 
+  font-size: 16px;
 }
+
+
 .contacts :first-child{
   font-size: xx-large;
   margin: 10px 10px;
@@ -88,16 +89,18 @@ height: 250px;
 }
 
 nav{
-  background-image: url('./assets/img/banner.jpg');
+  background-color: #ccc;
+  /* background-image: url('./assets/img/banner.jpg'); */
   object-fit: cover;
   width: 100%;
-  height: 600px;
+  height: 300px;
   grid-area: nav;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  color: white;
+  color: black;
+  
 }
 nav h2{
   text-align: center;
@@ -269,6 +272,10 @@ footer p{
 
 .socialIcon :nth-of-type(2) {
   margin: 0 5px;
+}
+
+.socialMediaInFaceBookPage{
+  display: none;
 }
 
 form{
