@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect }  from 'react';
 import Map from '../../components/map';
 import '../../App.css';
 import FacebookPage from '../../components/FacebookPage';
 
-const Contact=({name,setName,email,setEmail,message, setMessage})=> {
+const Contact=()=> {
+  // les States
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
+  useEffect( ()=>{
+    const fetchData = async () => {
+        const response = await fetch("http://localhost:4000/");
+        const data = await response.json();
+        console.log('data',data);
+        console.log("res",response);
+      };
+  
+      fetchData();
+  },[])
     
 
     const handleSubmit = (e)=>{

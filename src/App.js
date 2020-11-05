@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import {
@@ -89,10 +89,7 @@ import Layout from "./components/layout";
 //   }
 
 const App = () => {
-  // les States
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+
 
   // const handleClickFaceBook = () => {
   //   window.location = "https://www.facebook.com/agsdcombat";
@@ -133,14 +130,7 @@ const App = () => {
           <Route
             path="contact"
             element={
-              <Contact
-                name={name}
-                setName={setName}
-                email={email}
-                setEmail={setEmail}
-                message={message}
-                setMessage={setMessage}
-              />
+              <Contact/>
             }
           />
           <Route path="inscription" element={<Inscription />} />
