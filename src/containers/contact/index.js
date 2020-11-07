@@ -8,13 +8,14 @@ const Contact=()=> {
   // les States
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
     
 
     const handleSubmit = async (e)=>{
         e.preventDefault();
-        const response = await axios.post('http://localhost:4000/mail', {name, email, message});
+        const response = await axios.post('http://localhost:4000/mail', {name, email,subject, message});
         console.log("response",response);
     };
 
@@ -27,6 +28,12 @@ const Contact=()=> {
     const HandleChangeEmail = (e)=>{
         const email = e.target.value;
         setEmail(email);
+        // console.log(e.target.value)
+    };
+
+    const HandleChangeSubject = (e)=>{
+        const subject = e.target.value;
+        setSubject(subject);
         // console.log(e.target.value)
     };
 
@@ -62,6 +69,8 @@ const Contact=()=> {
             <input onChange={HandleChangeName} required type="text" placeholder="Nom..." value={name}/>
 
             <input onChange={HandleChangeEmail} required type="email" placeholder="Email..." value={email}/>
+           
+            <input onChange={HandleChangeSubject} required type="text" placeholder="Subject" value={subject}/>
 
             <textarea onChange={HandleChangeMessage} placeholder="Message..." rows="6" cols="33"/>
 
