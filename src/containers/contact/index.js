@@ -1,5 +1,6 @@
-import React, { useState, useEffect }  from 'react';
-import Map from '../../components/map';
+import React, { useState }  from 'react';
+import axios from 'axios';
+// import Map from '../../components/map';
 import '../../App.css';
 import FacebookPage from '../../components/FacebookPage';
 
@@ -9,45 +10,36 @@ const Contact=()=> {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  useEffect( ()=>{
-    const fetchData = async () => {
-        const response = await fetch("http://localhost:4000/");
-        const data = await response.json();
-        console.log('data',data);
-        console.log("res",response);
-      };
-  
-      fetchData();
-  },[])
     
 
-    const handleSubmit = (e)=>{
+    const handleSubmit = async (e)=>{
         e.preventDefault();
-        console.log(name, email)
+        const response = await axios.post('http://localhost:4000/mail', {name, email, message});
+        console.log("response",response);
     };
 
     const HandleChangeName = (e)=>{
         const name = e.target.value;
         setName(name);
-        console.log(e.target.value)
+        // console.log(e.target.value)
     };
 
     const HandleChangeEmail = (e)=>{
         const email = e.target.value;
         setEmail(email);
-        console.log(e.target.value)
+        // console.log(e.target.value)
     };
 
     const HandleChangeMessage = (e)=>{
         const message = e.target.value;
         setMessage(message);
-        console.log(e.target.value)
+        // console.log(e.target.value)
     };
 
 
-    console.log('name =>', name);
-    console.log('email =>', email);
-    console.log('message =>', message);
+    // console.log('name =>', name);
+    // console.log('email =>', email);
+    // console.log('message =>', message);
 
     return (
         <div className="contact">
@@ -88,7 +80,7 @@ const Contact=()=> {
         
         <div className="acces-map">
             <h2>ACCÈS</h2>
-        <Map />
+        {/* <Map /> */}
         </div>
         </div>
 

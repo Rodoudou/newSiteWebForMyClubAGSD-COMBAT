@@ -22,107 +22,16 @@ import Layout from "./components/layout";
 // import { faCoffee, faKey } from '@fortawesome/free-solid-svg-icons';
 // library.add(faCoffee, faKey);
 
-//Simuler une connexion
-// const fakeAuth ={
-//   isAuthenticated:false,
-//   authenticate(callback){
-//     fakeAuth.isAuthenticated = true
-//     setTimeout(callback, 100)
-//   },
-//   signout(callback){
-//     fakeAuth.isAuthenticated = false
-//     setTimeout(callback, 100)
-//   }
-// }
-
-//   const Login = () => {
-
-//     const navigate = useNavigate();
-//     const location = useLocation();
-
-//     const { from } = location.state || { from: '/public' };
-
-//     const login = () => {
-//       fakeAuth.authenticate(() => navigate(from, {replace: true}))
-
-//     }
-
-//     return (
-//       <div>
-//         <p>You must log in to view the page at </p>
-//         <button onClick={login}>Log in</button>
-//       </div>
-//     )
-//   }
-
-// const Private =()=> <h2>Private Page</h2>
-
-// const Public =()=> <h2>Public Page</h2>
-
-// const AuthButton = () =>{
-//   const navigate = useNavigate();
-
-//   return fakeAuth.isAuthenticated ? (
-//     <p>
-//       Welcome!{' '}
-//       <button
-//       onClick={()=>{
-//         fakeAuth.signout(()=> navigate('/'))
-//       }}
-//       >
-//         Sign out
-//       </button>
-//     </p>
-//   ):(
-//     <p>You are not logged in.</p>
-//   )
-// }
-
-// const PrivateRoute=({ ...props})=> {
-//     const location = useLocation();
-
-//     return fakeAuth.isAuthenticated ? (
-//       <Route { ...props}/>
-//     ): (
-//         <Navigate to="/login" replace state={{from: location}}/>
-//     )
-//   }
 
 const App = () => {
 
-
-  // const handleClickFaceBook = () => {
-  //   window.location = "https://www.facebook.com/agsdcombat";
-  // };
-
-  // const handleClickInstagram = () => {
-  //   window.location = "https://www.instagram.com/agsdcombat";
-  // };
-
-  // const handleClickTwitter = () => {
-  //   window.location = "https://twitter.com/CombatAgsd";
-  // };
-
-  // const handleClickYoutube = () => {
-  //   window.location =
-  //     "https://www.youtube.com/channel/UCDUTivMSGwXPmzMIGMwgWUA";
-  // };
-
   return (
     <Router>
-      {/* <AuthButton/> */}
       <Routes>
-        {/* <Route path="public" element={<Public/>}/> */}
-        {/* <PrivateRoute path="private" element={<Private/>}/> */}
-        {/* <Route path="login" element={<Login/>}/> */}
         <Route
           path="/"
           element={
             <Layout
-              // handleClickFaceBook={handleClickFaceBook}
-              // handleClickInstagram={handleClickInstagram}
-              // handleClickYoutube={handleClickYoutube}
-              // handleClickTwitter={handleClickTwitter}
             />
           }
         >
