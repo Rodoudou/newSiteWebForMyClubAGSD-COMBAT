@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import axios from "axios";
-import Map from '../../components/map';
+import Map from "../../components/map";
 import "../../App.css";
-import FacebookPage from "../../components/FacebookPage";
+// import FacebookPage from "../../components/FacebookPage";
 
 const Contact = () => {
   // les States
@@ -52,103 +52,74 @@ const Contact = () => {
   // console.log('message =>', message);
 
   return (
-    <div className="contact">
-      <FacebookPage />
-      <div className="contact-content">
-        <div className="contacts">
-          <h2>Nous contacter</h2>
-          <br />
-          <p>Tél : 06 15 37 71 51 (Professeur, responsable de la section)</p>
-          <br />
-          <p>Tél : 01 48 26 39 11 (Secrétariat)</p>
-        </div>
+    <div className="container">
+      <div className="row">
+        <div className="contact">
+          {/* <FacebookPage /> */}
+          <div className="contact-content">
+            <div className="contacts">
+              <h2>Nous contacter</h2>
+              <br />
+              <p>
+                Tél : 06 15 37 71 51 (Professeur)
+              </p>
+              <p>Tél : 01 48 26 39 11 (Secrétariat)</p>
+            </div>
+              <br />
 
-        <div className="formulaire">
-          <Form onSubmit={handleSubmit} action="Post" type="submit">
-            <Form.Group
-              controlId="formBasicPassword"
-              onChange={HandleChangeName}
-            >
-              <Form.Control type="text" placeholder="Name" />
-            </Form.Group>
+            <div className="formulaire">
+              <Form onSubmit={handleSubmit} action="Post" type="submit">
+                <Form.Group
+                  controlId="formBasicPassword"
+                  onChange={HandleChangeName}
+                >
+                  <Form.Control type="text" placeholder="Name" />
+                </Form.Group>
 
-            <Form.Group
-              controlId="formBasicEmail"
-              onChange={HandleChangeEmail}
-              required
-              type="email"
-              value={email}
-            >
-              <Form.Control type="text" placeholder="Enter email" />
-            </Form.Group>
+                <Form.Group
+                  controlId="formBasicEmail"
+                  onChange={HandleChangeEmail}
+                  required
+                  type="email"
+                  value={email}
+                >
+                  <Form.Control type="text" placeholder="Enter email" />
+                </Form.Group>
 
-            <Form.Group
-              controlId="formBasicEmail"
-              onChange={HandleChangeSubject}
-              required
-              type="text"
-              value={subject}
-            >
-              <Form.Control type="text" placeholder="Objet" />
-            </Form.Group>
-            <Form.Group
-              controlId="exampleForm.ControlTextarea1"
-              onChange={HandleChangeMessage}
-            >
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group>
-            <Button variant="primary" type="submit">
-              Envoyer
-            </Button>
-          </Form>
+                <Form.Group
+                  controlId="formBasicEmail"
+                  onChange={HandleChangeSubject}
+                  required
+                  type="text"
+                  value={subject}
+                >
+                  <Form.Control type="text" placeholder="Objet" />
+                </Form.Group>
+                <Form.Group
+                  controlId="exampleForm.ControlTextarea1"
+                  onChange={HandleChangeMessage}
+                >
+                  <Form.Control className="textarea_contact"  as="textarea" rows={3} />
+                </Form.Group>
+                <Button variant="primary" type="submit">
+                  Envoyer
+                </Button>
+              </Form>
+            </div>
 
-          {/* <form onSubmit={handleSubmit} action="Post" type="submit">
-            <input
-              onChange={HandleChangeName}
-              required
-              type="text"
-              placeholder="Nom..."
-              value={name}
-            />
+            <div className="transports">
+              <h2>Transports</h2>
+              <p>Métro : Ligne 13 – station « Saint-Denis Université »</p>
+              <p>Bus : Lignes 256 – 356 – station « Général Leclerc »</p>
+              <p>Tram : Lignes T5 – station « Roger Sémat »</p>
+              <p>Adresse : 4 av de Stalingrad Saint-Denis 93200</p>
+            </div>
 
-            <input
-              onChange={HandleChangeEmail}
-              required
-              type="email"
-              placeholder="Email..."
-              value={email}
-            />
-
-            <input
-              onChange={HandleChangeSubject}
-              required
-              type="text"
-              placeholder="Subject"
-              value={subject}
-            />
-
-            <textarea
-              onChange={HandleChangeMessage}
-              placeholder="Message..."
-              rows="6"
-              cols="33"
-            />
-
-            <button type="submit">Envoyer</button>
-          </form> */}
-        </div>
-
-        <div className="transports">
-          <h2>Transports</h2>
-          <p>Métro : Ligne 13 – station « Saint-Denis Université »</p>
-          <p>Bus : Lignes 256 – 356 – station « Général Leclerc »</p>
-          <p>Tram : Lignes T5 – station « Roger Sémat »</p>
-          <p>Adresse : 4 av de Stalingrad Saint-Denis 93200</p>
-        </div>
-
-        <div className="acces-map">
-          <h2>ACCÈS</h2>
-          <Map />
+            {/* <div className="acces-map">
+              <h2>ACCÈS</h2>
+              <Map />
+            </div> */}
+          </div>
         </div>
       </div>
     </div>

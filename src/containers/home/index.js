@@ -14,6 +14,8 @@ function Home() {
     fetchData();
   }, []);
   return (
+    <div className="container">
+    <div className="row">
     <div className="app">
       {isLoading ? (
         <p>En chargement...</p>
@@ -24,6 +26,8 @@ function Home() {
         </section>
       )}
     </div>
+    </div>
+</div>
   );
 }
 

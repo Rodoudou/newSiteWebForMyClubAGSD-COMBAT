@@ -18,8 +18,8 @@ const FacebookPage = ({ handleClickFaceBook }) => {
         </Spinner>
       ) : (
         <>
-          <div className="pageAdultes">
-            <h3 onClick={handleClickFaceBook}>AGSD COMBAT</h3>
+          <div className="pageAdultes" style={{marginBottom:5}}>
+            {/* <h3 onClick={handleClickFaceBook}>AGSD COMBAT</h3> */}
             <div
               className="fb-page"
               data-href="https://www.facebook.com/agsdcombat/"
@@ -44,13 +44,13 @@ const FacebookPage = ({ handleClickFaceBook }) => {
           </div>
 
           <div className="pageEnfants">
-            <h3 onClick={handleClickFaceBookids}>AGSD COMBAT Enfants</h3>
+            {/* <h3 onClick={handleClickFaceBookids}>AGSD COMBAT Enfants</h3> */}
             <div
               className="fb-page"
               data-href="https://www.facebook.com/agsdcombatenfants"
               data-tabs="timeline"
               data-width=""
-              data-height="130"
+              data-height="150"
               data-small-header="false"
               data-adapt-container-width="true"
               data-hide-cover="false"

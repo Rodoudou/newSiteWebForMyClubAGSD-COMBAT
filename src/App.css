@@ -5,8 +5,14 @@ body{
   font-family: Arial;
   font-size: 18px;
   line-height: 40px ;
+
 }
 
+.container{
+  box-shadow:1px 1px 12px #555;
+  display: flex;
+  justify-content: center;
+}
 .app{
   display: grid;
   grid-template-columns: 1fr;
@@ -33,6 +39,21 @@ body{
 .contacts p{
   margin-left: 10px;
   line-height: 10px ;
+}
+
+.textarea_contact{
+  font-family: "HK Compakt";
+  font-style: normal;
+  font-weight: 500;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  max-width: 455px;
+  padding-left: 20px;
+  outline: none;
+  color: rgb(25, 13, 51);
+  padding-top: 18px;
+  height: 8em;
+  resize: none;
 }
 
 
@@ -242,7 +263,10 @@ footer p{
 }
 
 .contact-content{
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left:50px;
 }
 
 /* Social Media */
