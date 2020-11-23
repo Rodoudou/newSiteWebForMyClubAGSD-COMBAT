@@ -56,7 +56,7 @@ const AMRLayout = ({ children }) => {
             <Link to="/contact">Contact</Link>
           </Menu.Item>
 
-        <Menu.Item>
+        <Menu.Item style={{marginLeft:'800px'}}>
             <SocialMedias/>
         </Menu.Item>
         </Menu>
