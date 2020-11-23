@@ -6,11 +6,11 @@ function Nave() {
 
 
         <div className="nav-content">
-              <h1>AGSD COMBAT Saint-Denis (93)</h1>
+              {/* <h1>AGSD COMBAT Saint-Denis (93)</h1>
               <p>
                 Sports de combats pour les adultes et les enfants à partir de 3 ans sur
                 la ville de Saint-Denis 93200
-              </p>
+              </p> */}
         </div>
  
 

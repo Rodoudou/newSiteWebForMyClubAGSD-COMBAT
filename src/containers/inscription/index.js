@@ -37,8 +37,9 @@ function Inscription() {
                         style={{ fontSize: 16 }}
                         href="http://www.agsd.fr/images/content/inscription/preinscription.pdf"
                       >
+                        {" "}
                         formulaire d’inscription
-                      </a>
+                      </a>{" "}
                       et la{" "}
                       <a href="http://www.agsd.fr/images/content/inscription/assurance.pdf">
                         feuille d'assurance{" "}
@@ -51,6 +52,7 @@ function Inscription() {
                       2- Pour finaliser l’inscription vous pouvez télécharger et
                       vous munir du
                       <Link style={{ fontSize: 16 }} to="/certificat-medical">
+                        {" "}
                         certificat médical
                       </Link>{" "}
                       de non contre-indication « à la pratique du sport en

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Article from "../../components/article";
-// import Map from "../../components/map";
-import "../../App.css";
+import Map from "../../components/map";
 
 
 function Home() {
@@ -20,9 +19,9 @@ function Home() {
       {isLoading ? (
         <p>En chargement...</p>
       ) : (
-        <section>
+        <section className="home-content" >
           <Article />
-          {/* <Map /> */}
+          <Map />
         </section>
       )}
     </div>

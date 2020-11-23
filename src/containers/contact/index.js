@@ -99,7 +99,7 @@ const Contact = () => {
                   controlId="exampleForm.ControlTextarea1"
                   onChange={HandleChangeMessage}
                 >
-                  <Form.Control className="textarea_contact"  as="textarea" rows={3} />
+                  <Form.Control className="textarea_contact"  as="textarea" rows={4} />
                 </Form.Group>
                 <Button variant="primary" type="submit">
                   Envoyer
@@ -115,10 +115,10 @@ const Contact = () => {
               <p>Adresse : 4 av de Stalingrad Saint-Denis 93200</p>
             </div>
 
-            {/* <div className="acces-map">
+            <div className="acces-map">
               <h2>ACCÈS</h2>
               <Map />
-            </div> */}
+            </div>
           </div>
         </div>
       </div>

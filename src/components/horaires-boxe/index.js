@@ -2,7 +2,7 @@ import React from "react";
 
 function Boxe() {
   return (
-    <div>
+    <div className="boxe-content">
       <table className="boxe">
         <thead>
           <tr>

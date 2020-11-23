@@ -5,40 +5,27 @@ body{
   font-family: Arial;
   font-size: 18px;
   line-height: 40px ;
-
 }
 
+.nav-content{
+  background-image: url('./assets/img/banner.jpg');
+}
+
+.home-content{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
 .container{
-  box-shadow:1px 1px 12px #555;
-  display: flex;
-  justify-content: center;
+  height: 100%;
 }
-.app{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 0px 90px 1fr 100px;
-  grid-template-areas: 
-  "menu"
-  "nav"
-  "section"
-  "footer";
+.boxe-content{
+  height: 100vh;
 }
 
-
-.inscription p{
-  text-decoration: none;
-  font-size: 16px;
-}
-
-
-.contacts :first-child{
-  font-size: xx-large;
-  margin: 10px 10px;
-}
-
-.contacts p{
-  margin-left: 10px;
-  line-height: 10px ;
+.tarifs-content{
+  height: 100vh;
 }
 
 .textarea_contact{
@@ -47,7 +34,7 @@ body{
   font-weight: 500;
   background-color: rgb(255, 255, 255);
   border-radius: 5px;
-  max-width: 455px;
+  max-width: 500px;
   padding-left: 20px;
   outline: none;
   color: rgb(25, 13, 51);
@@ -55,7 +42,6 @@ body{
   height: 8em;
   resize: none;
 }
-
 
 .acces-map{
   display: flex;
@@ -72,135 +58,13 @@ body{
 .transports p{
   margin-left: 10px;
 }
-.nav-content{
-  text-align: center;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
-/* 
-object-fit: cover;
-width: 100%;
-height: 250px;
- */
-.nav-content p{
-  word-wrap: wrap;
-}
-
-nav{
-  background-color: #ccc;
-  /* background-image: url('./assets/img/banner.jpg'); */
-  object-fit: cover;
-  width: 100%;
-  height: 300px;
-  grid-area: nav;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  color: black;
-  
-}
-nav h2{
-  text-align: center;
-}
-nav p{
-  font-size: 17px;
-}
-/* img[alt="logo"]{
-  height: 100px;
-  width: 25%;
-  margin-left: 10px;
-} */
-
-menu{
-  grid-area: "menu";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1F1F1F;
-  height: 55px;
-  position: fixed;
-  width: 100%;
-}
-
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  
-}
-
-.menu li .on{
-  color: #f60;
-}
-
-.menu li{
-  display: inline;
-  margin-left: 22px;
-}
-
-.menu li a{
-  text-decoration: none;
-  color: rgb(159, 154, 154);
-  text-transform: uppercase;
-  transition: 0.5s;
-}
-
-.menu li a:hover{
-  color: white;
-  transition: 0.5s;
-}
-
-.voir-menu, .cacher-menu, #check{
-  display: none;
-
-}
-section{
-  grid-area: section;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-section h1 {
-  width: 730px;
-  font-size: 30px;
- 
-}
-.article-home{
-  width: 500px;
-  text-align: center;
-  margin: auto;
-}
 
 
 .video{
   text-align: center;
 }
 
-
-footer{
-  background-color: #393939;
-  grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  flex-direction: column-reverse;
-}
-
-.footer{
-  display: flex;
-  margin: auto;
-}
-
-footer p{
-  color:white;
-  font-size: 13px;
-  margin-right: 10px;
-}
 
 .pageFacebook{
   display: flex;
@@ -210,31 +74,6 @@ footer p{
   margin-right: 5%;
 }
 
-.pageEnfants{
-  margin-top: 10px;
-}
-
-.pageEnfants h3{
-  text-decoration: none;
-  color: #E33028;
-  cursor: pointer;
-}
-
-.pageAdultes h3{
-  text-decoration: none;
-  color: #E33028;
-  cursor: pointer;
-}
-
-.pageEnfants h3:hover{
-  color: #e45f5a;
-  transition: 0.5s;
-}
-
-.pageAdultes h3:hover{
-  color: #e45f5a;
-  transition: 0.5s;
-}
 
 
 .certif{
@@ -244,6 +83,7 @@ footer p{
 .inscription-content{
   display: flex;
   flex-direction: row-reverse;
+  height: 100vh;
 }
 
 .horaires{
@@ -251,16 +91,6 @@ footer p{
   flex-direction: row-reverse;
 }
 
-.tarifs-content{
-  margin-left: 20px;
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.contact{
-  display: flex;
-  flex-direction: row-reverse;
-}
 
 .contact-content{
   display: flex;
@@ -288,22 +118,16 @@ footer p{
   display: none;
 }
 
-.inscription :first-child{
-  font-size: xx-large;
-  margin: 10px 10px;
-}
 
-.inscription  p{
-  margin-left: 10px;
-}
+
 /* tab */
 table {
   border:3px solid black;
   border-collapse:collapse;
   width:90%;
   margin:135px auto;
-  
   }
+  
   thead, tfoot {
   background-color:#D0E3FA;
   border:1px solid #6495ed;
@@ -373,92 +197,3 @@ td, th{
   }
 
 
-@media screen and (max-width: 950px) {
-
-  nav{
-    display: none;
-  }
-
-  menu{
-    display: flex;
-    justify-content: flex-start;
-    background-color: #1F1F1F;
-    top: 0;
-  }
-
-  /* changer color menu Burger */
-label[class="voir-menu"]{
-  color: white;
-}
-
-/* cacher la X pour faire disparaitre le menu */
-label[class="cacher-menu"]{
-  display: none;
-}
-/* supprimer social icon du menu */
-.socialIcon{
-  display: none;
-}
-
-.voir-menu{
-  margin-left: 10px;
-}
-  .voir-menu, .cacher-menu{
-    display: block;
-    font-size: 30px;
-    cursor: pointer;
-    transform-origin: 0.5s;
-}
-
-.voir-menu:hover, .cacher-menu:hover{
-    color: #666;
-    transform-origin: 0.5s;
-}
-
-.menu{
-    background-color: #dbdbdb;
-    position: fixed;
-    top:55px;
-    left: -100%;
-    height: 100vh;
-    width: 100%;
-    transition: 0.5s;
-    padding-top: 80px;
-}
-.menu-content{
-  display: flex;
-  justify-content: space-around;
- 
-}
-
-.menu li{
-    display: block;
-    margin-left: 22px;
-    text-align: center;
-    margin-bottom: 35px;
-    border-bottom: 1px solid #ccc;
-}
-
-/* color text dans menu burger */
-.menu li a {
-  color: black;
-}
-
-#check:checked ~ .menu{
-    left: 0;
-}
-
-.cacher-menu{
-    position: absolute;
-    top: 40px;
-    left: 40px;
-    
-}
-
-footer p{
-  display: none;
-}
-
-
-
-}
