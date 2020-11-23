@@ -106,8 +106,9 @@ body{
 }
 
 .socialIcon {
-  color:rgb(159, 154, 154);
+  color: "#FFFFFFA6";
   cursor: pointer;
+
 }
 
 .socialIcon :nth-of-type(2) {
